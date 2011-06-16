@@ -1,6 +1,6 @@
 This is a simple proxy server written in node.js which is used on inkdroid.org.
 Rather than run it as root (so node can bind to port 80) I rewrite port 80 
-tcp traffic to go to port 8000 instead, where this proxy is running.
+tcp traffic to go to port 8000 instead, where this proxy is running as www-data.
 
     iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
 
