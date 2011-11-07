@@ -3,7 +3,6 @@
     "version": "0.0.1",
     "private": true,
     "dependencies": {
-        "http-proxy": ">= 0.5.10",
-        "elf-logger": "latest"
+        "http-proxy": ">= 0.5.10"
     }
 }
